@@ -1,5 +1,5 @@
 <?php
-$ipk = 4;
+$ipk = 2.5;
 
 if($ipk < 2 && $ipk > 0){
     echo  "Grade E" . "<br>";
