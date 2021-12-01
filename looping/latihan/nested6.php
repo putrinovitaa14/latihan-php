@@ -1,23 +1,25 @@
 <?php
-for( $a= 4; $a > 0; $a--){
-    for($i = 1; $i <= $a; $i++){
-        echo "  ";
-    }for($a1 = 5; $a1 > $a; $a1--){
-        echo"*";
-    }for($a2 = 4; $a2>$a; $a2--){
-        echo"*";
-    }
-    echo"<br>";
-}
 
-for($b=0; $b <= 4; $b++){
-    for($j=1; $j <= $b; $j++){
-        echo"  ";
-    }for($b1=5; $b1 > $b; $b1--){
-        echo"*";
-    }for($b2=4; $b2 > $b; $b2--){
-        echo"*";
+$star = 5;
+$jumlah=5;
+
+for($a = $star; $a > 0; $a--){
+    for($i = 1; $i <= $a; $i++){
+        echo "&nbsp";
     }
-    echo"<br>";
+    for($a1 = $star; $a1 >= $a; $a1--){
+        echo "*";
+
+    }
+
+    echo "<br>";
 }
-?>
+for($a=1; $a<=$jumlah; $a++){
+    for($b=1; $b<=$a; $b++){
+        echo '&nbsp';
+    }
+    for($c=$jumlah; $c>=$a; $c-=1){
+        echo '*';
+    }
+    echo "<br/>";
+}

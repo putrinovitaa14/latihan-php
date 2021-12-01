@@ -1,14 +1,16 @@
 <?php
 
-$j = 5;
+$star = 5;
 
-for($a=1; $a <= 5; $a++){
-    for($b = 5; $b >= $a; $b-=1){
+for($a = $star; $a > 0; $a--){
+    for($i = 1; $i <= $a; $i++){
+        echo "&nbsp";
     }
-    for($c=1; $c <= $a; $c++){
-        echo '*';
+    for($a1 = $star; $a1 >= $a; $a1--){
+        echo "*";
+
     }
-    echo "<br/>";
+
+    echo "<br>";
 }
-
 ?>
